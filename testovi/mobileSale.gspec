@@ -1,0 +1,71 @@
+@objects 
+    sadrzaj .sadrzaj
+    meni .meni
+    logo .logo
+    zauzeta-* .zauzetaSala
+    slobodna-* .slobodnaSala
+    lista .meni ul
+    kancelarija .kancelarija
+    sprat .sadrzaj .tabelaSala .headerSprat
+    redni .sadrzaj .tabelaSala .headerRedni
+    stranica-* .meni ul li
+
+= testovi =
+
+    stranica-1:
+        inside meni
+        above stranica-2
+        text is "Početna"
+
+    stranica-2:
+        inside meni
+        above stranica-3
+        text is "Sale"
+
+    stranica-3:
+        inside meni
+        above stranica-4
+        text is "Unos"
+
+    stranica-4:
+        inside meni
+        above stranica-5
+        text is "Rezervacije"
+
+    stranica-5:
+        inside meni
+        below stranica-4
+        text is "Osobe"
+
+    sadrzaj:
+        width 555px
+        height 306px
+
+    meni:
+        above sadrzaj 16px
+        inside viewport 60px top, 8px left right
+
+    lista:
+        below logo 16px
+        height 149px
+        inside meni 0px left right bottom
+
+    logo:
+        inside meni 0px top left right
+
+    logo, lista:
+        centered horizontally inside meni 1px
+
+    zauzeta-1:
+        above slobodna-1 30px
+
+    zauzeta-1, slobodna-1:
+        height 30px
+        inside sadrzaj
+        width 52px
+
+    logo:
+        width 555px
+        height 100px
+        centered horizontally inside meni    
+

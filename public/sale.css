@@ -1,0 +1,106 @@
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding-block-end: 1.5%;
+}
+
+ul li {
+  display: inline;
+  padding: 1%;
+  color: white;
+}
+
+.trenutna {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.meni {
+  background-color: #800000;
+  margin-block-start: 3%;
+  margin-top: 60px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  transform: translateY(-50%);
+}
+
+.sadrzaj {
+  background-color: #800000;
+  display: flex;
+  justify-content: center;
+}
+
+.tabelaSala {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+
+.headerSprat,
+.headerRedni {
+  width: 40px;
+  padding: 5px;
+  border: white solid 2px;
+  background-color: #800000;
+  color: white;
+}
+
+.sala {
+  width: 40px;
+  padding: 5px;
+  border: white solid 2px;
+  background-color: #800000;
+  color: white;
+}
+
+#sprat {
+  text-align: center;
+}
+
+.redniBrojevi {
+  text-align: right;
+}
+
+.slobodnaSala {
+  background-color: green;
+}
+
+.zauzetaSala {
+  background-color: #b30000;
+}
+
+.kancelarija {
+  background-color: grey;
+}
+
+a {
+  color: #ffffff;
+}
+
+img {
+  /* position: relative; */
+  background: white;
+  padding: 2px 4px 4px;
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerRedni,
+  .headerSprat {
+    display: none;
+  }
+
+  ul li {
+    display: block;
+  }
+}

@@ -1,0 +1,126 @@
+@objects 
+    sadrzaj .sadrzaj
+    meni .meni
+    logo .logo
+    zauzeta-* .zauzetaSala
+    slobodna-* .slobodnaSala
+    lista .meni ul
+    kancelarija .kancelarija
+    sprat .sadrzaj .tabelaSala .headerSprat
+    redni .sadrzaj .tabelaSala .headerRedni
+    stranica-* .meni ul li
+    slike-* .sadrzaj img
+
+= testovi =
+
+    stranica-1:
+        inside meni
+        above stranica-2
+        text is "Početna"
+
+    stranica-2:
+        inside meni
+        above stranica-3
+        text is "Sale"
+
+    stranica-3:
+        inside meni
+        above stranica-4
+        text is "Unos"
+
+    stranica-4:
+        inside meni
+        above stranica-5
+        text is "Rezervacije"
+
+    stranica-5:
+        inside meni
+        below stranica-4
+        text is "Osobe"
+
+    sadrzaj:
+        width 555px
+        height 2990px
+
+    meni:
+        above sadrzaj 16px
+        inside viewport 60px top, 8px left right
+
+    lista:
+        below logo 16px
+        height 149px
+        inside meni 0px left right bottom
+
+    logo:
+        inside meni 0px top left right
+
+    logo, lista:
+        centered horizontally inside meni 1px
+
+    logo:
+        width 555px
+        height 100px
+        centered horizontally inside meni    
+
+    slike-*:
+        width 230px
+        height 228px
+
+    slike-1:
+        inside sadrzaj
+        aligned vertically left slike-2
+        above slike-2
+        below meni
+
+    slike-2:
+        inside sadrzaj
+        aligned vertically left slike-3
+        above slike-3
+        below slike-1
+
+    slike-3:
+        inside sadrzaj
+        aligned vertically left slike-2
+        above slike-4
+        below slike-2
+
+    slike-4:
+        inside sadrzaj
+        aligned vertically left slike-5
+        above slike-5
+        below slike-3
+
+    slike-5:
+        inside sadrzaj
+        aligned vertically left slike-6
+        above slike-6
+        below slike-4
+
+    slike-6:
+        inside sadrzaj
+        aligned vertically left slike-5
+        above slike-7
+        below slike-5
+
+    slike-7:
+        inside sadrzaj
+        aligned vertically left slike-8
+        above slike-8
+        below slike-6
+
+    slike-8:
+        inside sadrzaj
+        aligned vertically left slike-9
+        above slike-9
+        below slike-7
+
+    slike-9:
+        inside sadrzaj
+        aligned vertically left slike-8
+        above slike-10
+        below slike-8
+
+    slike-10:
+        inside sadrzaj
+        aligned vertically left slike-7
+        below slike-9

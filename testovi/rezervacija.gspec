@@ -1,0 +1,72 @@
+@objects
+    meni .meni
+    meniLista .meni ul
+    forma .sadrzaj form
+    option .sadrzaj form select option
+    button .sadrzaj #periodicnost
+    tabela .sadrzaj form .tabelaRezervacija
+    sobodna .sadrzaj form .tabelaRezervacija .slobodna
+    zauzeta .sadrzaj form .tabelaRezervacija .zauzeta
+    pocetak .sadrzaj #pocetak
+    naslov .sadrzaj .tabelaRezervacija .naslov
+    celija .sadrzaj .tabelaRezervacija .skrivenaCelija
+    dugmad .sadrzaj .dugmad
+    lijevo .sadrzaj .dugmad #lijevi
+    desno .sadrzaj .dugmad #desni
+
+= Skeleton =
+    meni:
+        above forma 46px
+        inside screen 60px top, 8px left right
+
+    naslov:
+        above celija 36px
+        below forma 33px
+        height 33px
+
+    meni, dugmad, naslov, forma:
+        centered horizontally inside screen 1px
+
+    celija:
+        above dugmad
+        height 32px
+        width 54px
+
+    naslov, celija, forma:
+        inside screen >= 8px left right
+
+    dugmad:
+        height 20px
+        inside screen 38px bottom, 8px left right
+
+= meni elements =
+    meniLista:
+        centered horizontally inside meni 1px
+        height 32px
+        inside meni 0px left right bottom
+
+= dugmad elements =
+    desno:
+        right-of lijevo
+
+    lijevo, desno:
+        height 20px
+        inside dugmad 0px top bottom
+        width 80px
+
+= forma elements =
+    button:
+        below pocetak
+        height 18px
+        inside forma 3px bottom, >= 0px right
+        width 13px
+
+    pocetak:
+        above button
+        inside forma 42px top, 0px right
+
+
+
+   
+
+

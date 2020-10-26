@@ -1,0 +1,49 @@
+@objects 
+    sadrzaj .sadrzaj
+    meni .meni
+    logo .logo
+    zauzeta-* .zauzetaSala
+    slobodna-* .slobodnaSala
+    lista .meni ul
+    kancelarija .kancelarija
+
+= Skeleton =
+    meni:
+        above sadrzaj 16px
+        inside viewport 60px top, 8px left right
+
+    meni, sadrzaj:
+        centered horizontally inside viewport 1px
+
+    sadrzaj:
+        inside viewport 8px left right
+
+
+    lista:
+        below logo 16px
+        height 32px
+        inside meni 0px left right bottom
+
+    logo:
+        inside meni 0px top left right
+
+    logo, lista:
+        centered horizontally inside meni 1px
+
+= sadrzaj elements =
+    zauzeta-1:
+        above slobodna-1 30px
+
+    zauzeta-1, slobodna-1:
+        height 30px
+        inside sadrzaj
+        width 52px
+   
+
+    logo:
+        width 996px
+        height 100px
+        centered horizontally inside meni 
+
+
+

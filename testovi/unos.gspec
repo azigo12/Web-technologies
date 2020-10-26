@@ -1,0 +1,61 @@
+@objects
+    sadrzaj .sadrzaj
+    meni .meni
+    logo .meni .logo
+    labela-* .sadrzaj form label
+    input-* .sadrzaj form input
+
+= testovi =
+
+    labela-1:
+        inside sadrzaj
+        aligned horizontally all input-1 4px
+
+    labela-2:
+        inside sadrzaj
+        aligned horizontally all input-2 4px
+
+    labela-3:
+        inside sadrzaj
+        aligned horizontally all input-3 4px
+
+    labela-4:
+        inside sadrzaj
+        aligned horizontally all input-4 4px 
+
+    input-1:
+        inside sadrzaj
+        aligned horizontally all labela-1 4px   
+
+    input-2:
+        inside sadrzaj
+        aligned horizontally all labela-2 4px
+
+    input-3:
+        inside sadrzaj
+        aligned horizontally all labela-3 4px
+
+    input-4:
+        inside sadrzaj
+        aligned horizontally all labela-4 4px
+
+    input-5:
+        inside sadrzaj
+        aligned vertically right input-4 1px
+        css font-size is "16px"             
+
+    meni:
+        inside viewport 8px left right
+        above sadrzaj
+        height 148px
+        centered horizontally inside viewport 1px
+
+    logo:
+        width 979px
+        height 100px
+        inside viewport
+        centered horizontally inside meni
+
+    sadrzaj:
+        centered horizontally inside viewport
+        below meni

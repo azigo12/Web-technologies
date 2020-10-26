@@ -1,0 +1,103 @@
+.meni {
+  background-color: #800000;
+  margin-block-start: 3%;
+  margin-top: 60px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding-block-end: 1.5%;
+}
+
+ul li {
+  display: inline;
+  padding: 1%;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.sadrzaj {
+  padding: 20px;
+  background-color: #800000;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 10px;
+}
+
+.dugmad {
+  text-align: center;
+  background-color: #800000;
+  padding-bottom: 3%;
+}
+
+img {
+  /* position: relative; */
+  background: cornsilk;
+  padding: 2px 4px 4px;
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+#lijevi {
+  border: 2px solid white;
+  background: #800000;
+  color: white;
+  width: 8%;
+  height: 20px;
+  margin-right: 5%;
+}
+
+#desni {
+  border: 2px solid white;
+  background: #800000;
+  color: white;
+  width: 8%;
+  height: 20px;
+  margin-left: 5%;
+}
+
+.trenutna {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+  .sadrzaj {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.logo img {
+  transform: translateY(-50%);
+  background: white;
+}
+
+.sadrzaj img {
+  width: 280;
+  height: 280;
+}
+
+@media only screen and (max-width: 600px) {
+  ul li {
+    display: block;
+  }
+
+  .sadrzaj img {
+    transform: scale(0.8);
+  }
+
+  .sadrzaj {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}

@@ -1,0 +1,88 @@
+body,
+html {
+  height: 100%;
+}
+
+.meni {
+  background-color: #800000;
+  margin-block-start: 3%;
+  margin-top: 60px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  transform: translateY(-50%);
+}
+
+img {
+  /* position: relative; */
+  background: white;
+  padding: 2px 4px 4px;
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+.sadrzaj {
+  background-color: #800000;
+  display: flex;
+  justify-content: center;
+  height: 90%;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding-block-end: 1.5%;
+  padding-left: 0;
+}
+
+ul li {
+  display: inline;
+  padding: 1%;
+  color: white;
+}
+
+form {
+  margin: 3%;
+}
+
+label {
+  width: 120px;
+  display: inline-block;
+  color: white;
+}
+
+a {
+  color: #ffffff;
+}
+
+input {
+  background: #ffcccc;
+  color: #800000;
+  font-weight: bold;
+}
+
+#tabelaSala {
+  border: 2px solid white;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  color: white;
+}
+
+td,
+th {
+  width: 140px;
+  padding: 5px;
+  border: 2px solid white;
+  font-weight: normal;
+}
+
+.trenutna {
+    text-decoration: none;
+  }

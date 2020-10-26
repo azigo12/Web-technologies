@@ -1,0 +1,87 @@
+@objects
+    sadrzaj .sadrzaj
+    meni .meni
+    logo .meni .logo
+    labela-* .sadrzaj form label
+    input-* .sadrzaj form input
+    stranica-* .meni ul li
+
+= testovi =
+
+    stranica-1:
+        inside meni
+        above stranica-2
+        text is "Početna"
+
+    stranica-2:
+        inside meni
+        above stranica-3
+        text is "Sale"
+
+    stranica-3:
+        inside meni
+        above stranica-4
+        text is "Unos"
+
+    stranica-4:
+        inside meni
+        above stranica-5
+        text is "Rezervacije"
+
+    stranica-5:
+        inside meni
+        below stranica-4
+        text is "Osobe"
+
+    labela-1:
+        inside sadrzaj
+        aligned vertically left input-1
+
+    labela-2:
+        inside sadrzaj
+        aligned vertically left input-2
+
+    labela-3:
+        inside sadrzaj
+        aligned vertically left input-3
+
+    labela-4:
+        inside sadrzaj
+        aligned vertically left input-4
+
+    input-1:
+        inside sadrzaj
+        aligned vertically left labela-1  
+
+    input-2:
+        inside sadrzaj
+        aligned vertically left labela-2
+
+    input-3:
+        inside sadrzaj
+        aligned vertically left labela-3
+
+    input-4:
+        inside sadrzaj
+        aligned vertically left labela-4
+
+    input-5:
+        inside sadrzaj
+        aligned vertically left input-4
+        css font-size is "16px"             
+
+    meni:
+        inside viewport 8px left right
+        above sadrzaj
+        height 269px
+        centered horizontally inside viewport 1px
+
+    logo:
+        width 555px
+        height 100px
+        inside viewport
+        centered horizontally inside meni
+
+    sadrzaj:
+        centered horizontally inside viewport
+        below meni

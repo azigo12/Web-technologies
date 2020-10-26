@@ -1,0 +1,87 @@
+@objects
+    sadrzaj .sadrzaj
+    slike-* .sadrzaj img
+    meni .meni ul
+    logo .meni img
+
+= testovi =
+    
+    meni:
+        inside viewport 8px left right
+        below logo
+        height 32px
+        centered horizontally inside viewport 1px
+
+    logo:
+        width 102px
+        height 100px
+        inside viewport 10px top, >= 8px left right
+        centered horizontally inside meni
+
+    sadrzaj:
+        centered horizontally inside viewport
+        below meni
+        height 1214px
+        width 979px
+
+    slike-*:
+        width 288px
+        height 286px
+
+    slike-1:
+        inside sadrzaj
+        aligned horizontally all slike-2
+
+    slike-2:
+        inside sadrzaj
+        aligned horizontally all slike-3
+
+    slike-3:
+        inside sadrzaj
+        aligned horizontally all slike-2
+
+    slike-4:
+        inside sadrzaj
+        aligned horizontally all slike-5
+
+    slike-5:
+        inside sadrzaj
+        aligned horizontally all slike-6
+
+    slike-6:
+        inside sadrzaj
+        aligned horizontally all slike-5
+
+    slike-7:
+        inside sadrzaj
+        aligned horizontally all slike-8
+
+    slike-8:
+        inside sadrzaj
+        aligned horizontally all slike-9
+
+    slike-9:
+        inside sadrzaj
+        aligned horizontally all slike-8
+
+    slike-10:
+        inside sadrzaj
+        aligned vertically left slike-7
+
+    
+
+
+   
+
+
+
+
+   
+    
+
+
+
+    
+
+    
+

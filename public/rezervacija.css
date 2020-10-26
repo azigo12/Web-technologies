@@ -1,0 +1,175 @@
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding-block-end: 1.5%;
+}
+
+ul li {
+  display: inline;
+  padding: 1%;
+}
+
+.meni {
+  background-color: #800000;
+  margin-block-start: 3%;
+  margin-top: 60px;
+}
+
+.sadrzaj {
+  background-color: #800000;
+  /* display: flex; */
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.logo img {
+  background: cornsilk;
+  padding: 2px 4px 4px;
+  border-radius: 20%;
+  transform: translateY(-50%);
+  background: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: white;
+}
+
+form {
+  margin-top: 3%;
+  display: inline-block;
+  text-align: left;
+  color: #800000;
+}
+
+.tabelaRezervacija {
+  border: 2px solid white;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  color: white;
+}
+
+td,
+th {
+  width: 40px;
+  padding: 5px;
+  border: 2px solid white;
+  font-weight: normal;
+}
+
+.trenutna {
+  text-decoration: none;
+}
+
+.slobodna {
+  background: linear-gradient(
+    to bottom,
+    #800000 0%,
+    #800000 80%,
+    #66ff99 80%,
+    #66ff99 100%
+  );
+}
+
+.zauzeta {
+  background: linear-gradient(
+    to bottom,
+    #800000 0%,
+    #800000 80%,
+    #ff8080 80%,
+    #ff8080 100%
+  );
+}
+
+.dugmad {
+  background-color: #800000;
+}
+
+#lijevi {
+  border: 2px solid white;
+  background: #800000;
+  color: white;
+  margin-right: 5%;
+  width: 80px;
+  height: 2%;
+}
+
+#desni {
+  border: 2px solid white;
+  background: #800000;
+  color: white;
+  margin-left: 5%;
+  width: 80px;
+  height: 2%;
+}
+.naslov {
+  column-span: all;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.skrivenaCelija {
+  border: none;
+  background: none;
+}
+
+input {
+  background: #ffcccc;
+  color: #800000;
+  height: 18px;
+  font-weight: normal;
+}
+
+form label {
+  width: 180px;
+  display: inline-block;
+  color: white;
+  height: 18px;
+  text-align: left;
+}
+
+#listaSala,
+#listaOsoba {
+  background-color: #ffcccc;
+  text-align: left;
+  color: #800000;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+select:focus > option:checked {
+  background: #800000 !important;
+}
+
+#periodicna {
+  background-color: #ffcccc;
+}
+
+@media only screen and (max-width: 600px) {
+  ul li {
+    display: block;
+  }
+
+  table .naslov {
+    display: none;
+  }
+
+  tr > * {
+    display: block;
+  }
+
+  tr {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+
+  .sakrij {
+    display: none;
+  }
+}

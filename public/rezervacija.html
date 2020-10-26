@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="rezervacija.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="meni">
+      <div class="logo">
+        <img src="/etflogo.png" alt="Logo etf-a" />
+      </div>
+      <ul>
+        <li><a href="./pocetna.html">Početna</a></li>
+        <li><a href="./sale.html">Sale</a></li>
+        <li><a href="./unos.html">Unos</a></li>
+        <li><a href="./rezervacija.html" class="trenutna">Rezervacije</a></li>
+        <li><a href="./osoblje.html">Osobe</a></li>
+      </ul>
+    </div>
+    <div class="sadrzaj">
+      <form id="forma">
+        <label for="listaSala">Lista sala:</label>
+        <select name="listaSala" id="listaSala">
+        </select>
+        <br>
+        <br>
+        <label for="listaOsoba">Lista osoba:</label>
+        <select name="listaOsoba" id="listaOsoba">
+        </select>
+        <br>
+        <br>
+        <label for="pocetak">Pocetak:</label>
+      <input type="time" name="pocetak" id="pocetak">
+      <br>
+      <br>
+      <label for="kraj">Kraj:</label>
+      <input type="time" name="kraj" id="kraj">
+      <br>
+      <br>
+      <label for="periodicnost">Periodicna rezervacija: </label>
+      <input type="checkbox" name="periodicnost" id="periodicnost">
+    </form>
+    
+      <table class="tabelaRezervacija">
+        <tr>
+          <td colspan="7" class="naslov" id="naslov"></td>
+        </tr>
+        <tr>
+          <th>PON</th>
+          <th>UTO</th>
+          <th>SRI</th>
+          <th>ČET</th>
+          <th>PET</th>
+          <th>SUB</th>
+          <th>NED</th>
+        </tr>
+        <tbody id="sadrzajKalendara">
+
+        </tbody>
+        
+      </table>
+
+      <div class="dugmad">
+            <input type="submit" value="Prethodni" id="lijevi" onclick="-1, Kalendar.promijeniMjesec"/>
+            <input type="submit" value="Sljedeći" id="desni" onclick="1, Kalendar.promijeniMjesec"/>
+      </div>
+    </div>
+    </div>
+    <script src="kalendar.js"></script>
+    <script src="Pozivi.js"></script>
+    <script src="rezervacija.js"></script>
+    
+    
+  </body>
+</html>

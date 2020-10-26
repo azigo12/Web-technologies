@@ -1,0 +1,50 @@
+{
+  "periodicna": [
+    {
+      "dan": 1,
+      "semestar": "ljetni",
+      "pocetak": "08:00",
+      "kraj": "10:00",
+      "naziv": "VA1",
+      "predavac": "Pero Peric"
+    },
+    {
+      "dan": 3,
+      "semestar": "zimski",
+      "pocetak": "11:00",
+      "kraj": "14:00",
+      "naziv": "VA2",
+      "predavac": "Miki Maus"
+    }
+  ],
+  "vanredna": [
+    {
+      "datum": "15.10.2019",
+      "pocetak": "08:00",
+      "kraj": "10:00",
+      "naziv": "VA1",
+      "predavac": "Pero Peric"
+    },
+    {
+      "datum": "01.02.2019",
+      "pocetak": "09:00",
+      "kraj": "10:00",
+      "naziv": "MA",
+      "predavac": "Miki Maus"
+    },
+    {
+      "datum": "02.01.2020",
+      "pocetak": "10:00",
+      "kraj": "11:00",
+      "naziv": "0-05",
+      "predavac": "Profesor"
+    },
+    {
+      "datum": "11.01.2020",
+      "pocetak": "10:00",
+      "kraj": "11:00",
+      "naziv": "0-05",
+      "predavac": "Profesor"
+    }
+  ]
+}
