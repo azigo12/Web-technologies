@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Galen Test Report</title>
+        <link rel="stylesheet" href="galen-report.css"/>
+        <script src="vue.js"></script>
+        <script src="galen-report.js"></script>
+        <script type="text/javascript">
+var REPORT_DATA = {
+  "testId" : "1-rezervacija.gspec",
+  "name" : "rezervacija.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  rezervacija.gspec --url http://localhost/rezervacija.html --size 1024x768 --htmlreport reports/rezervacija",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: rezervacija.gspec included tags: ",
+          "status" : "info",
+          "time" : 1573601009732,
+          "sections" : [ {
+            "name" : "Skeleton",
+            "place" : {
+              "filePath" : "rezervacija.gspec",
+              "lineNumber" : 17
+            },
+            "objects" : [ {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "above forma 46px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "forma",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "46px",
+                  "realDistance" : "46px"
+                } ],
+                "highlight" : [ "meni", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "inside screen 60px top, 8px left right",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "60px",
+                  "realDistance" : "60px"
+                }, {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "8px",
+                  "realDistance" : "8px"
+                }, {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "8px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "meni", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "meni", "screen" ]
+              } ]
+            }, {
+              "name" : "naslov",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "above celija 36px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "naslov",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "celija",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "36px",
+                  "realDistance" : "36px"
+                } ],
+                "highlight" : [ "naslov", "celija" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "below forma 33px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "naslov",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "forma",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "33px",
+                  "realDistance" : "33px"
+                } ],
+                "highlight" : [ "naslov", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "height 33px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "naslov",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "naslov",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "33px",
+                  "realDistance" : "33px"
+                } ],
+                "highlight" : [ "naslov" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "naslov", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "inside screen >= 8px left right",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "naslov",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : ">= 8px",
+                  "realDistance" : "302px"
+                }, {
+                  "from" : {
+                    "object" : "naslov",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 8px",
+                  "realDistance" : "303px"
+                } ],
+                "highlight" : [ "naslov", "screen" ]
+              } ]
+            }, {
+              "name" : "dugmad",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "dugmad", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 39
+                },
+                "name" : "height 20px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "dugmad",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "dugmad",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "20px",
+                  "realDistance" : "20px"
+                } ],
+                "highlight" : [ "dugmad" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 40
+                },
+                "name" : "inside screen 38px bottom, 8px left right",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "dugmad",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "38px",
+                  "realDistance" : "38px"
+                }, {
+                  "from" : {
+                    "object" : "dugmad",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "8px",
+                  "realDistance" : "8px"
+                }, {
+                  "from" : {
+                    "object" : "dugmad",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "8px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "dugmad", "screen" ]
+              } ]
+            }, {
+              "name" : "forma",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "forma", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "inside screen >= 8px left right",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "forma",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : ">= 8px",
+                  "realDistance" : "353px"
+                }, {
+                  "from" : {
+                    "object" : "forma",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 8px",
+                  "realDistance" : "354px"
+                } ],
+                "highlight" : [ "forma", "screen" ]
+              } ]
+            }, {
+              "name" : "celija",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "above dugmad",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "celija",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "dugmad",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "170px"
+                } ],
+                "highlight" : [ "celija", "dugmad" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "height 32px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "celija",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "celija",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "32px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "celija" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 33
+                },
+                "name" : "width 54px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "celija",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "celija",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "54px",
+                  "realDistance" : "54px"
+                } ],
+                "highlight" : [ "celija" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "inside screen >= 8px left right",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "celija",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : ">= 8px",
+                  "realDistance" : "302px"
+                }, {
+                  "from" : {
+                    "object" : "celija",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 8px",
+                  "realDistance" : "639px"
+                } ],
+                "highlight" : [ "celija", "screen" ]
+              } ]
+            } ]
+          }, {
+            "name" : "meni elements",
+            "place" : {
+              "filePath" : "rezervacija.gspec",
+              "lineNumber" : 42
+            },
+            "objects" : [ {
+              "name" : "meniLista",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "centered horizontally inside meni 1px",
+                "highlight" : [ "meniLista", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "height 32px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meniLista",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meniLista",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "32px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "meniLista" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 46
+                },
+                "name" : "inside meni 0px left right bottom",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meniLista",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                }, {
+                  "from" : {
+                    "object" : "meniLista",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                }, {
+                  "from" : {
+                    "object" : "meniLista",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "meniLista", "meni" ]
+              } ]
+            } ]
+          }, {
+            "name" : "dugmad elements",
+            "place" : {
+              "filePath" : "rezervacija.gspec",
+              "lineNumber" : 48
+            },
+            "objects" : [ {
+              "name" : "desno",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 50
+                },
+                "name" : "right-of lijevo",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "desno",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "lijevo",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "102px"
+                } ],
+                "highlight" : [ "desno", "lijevo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "height 20px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "desno",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "desno",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "20px",
+                  "realDistance" : "20px"
+                } ],
+                "highlight" : [ "desno" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "inside dugmad 0px top bottom",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "desno",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "dugmad",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                }, {
+                  "from" : {
+                    "object" : "desno",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "dugmad",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "desno", "dugmad" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 55
+                },
+                "name" : "width 80px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "desno",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "desno",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "80px",
+                  "realDistance" : "80px"
+                } ],
+                "highlight" : [ "desno" ]
+              } ]
+            }, {
+              "name" : "lijevo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "height 20px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "lijevo",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "lijevo",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "20px",
+                  "realDistance" : "20px"
+                } ],
+                "highlight" : [ "lijevo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "inside dugmad 0px top bottom",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "lijevo",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "dugmad",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                }, {
+                  "from" : {
+                    "object" : "lijevo",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "dugmad",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "lijevo", "dugmad" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 55
+                },
+                "name" : "width 80px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "lijevo",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "lijevo",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "80px",
+                  "realDistance" : "80px"
+                } ],
+                "highlight" : [ "lijevo" ]
+              } ]
+            } ]
+          }, {
+            "name" : "forma elements",
+            "place" : {
+              "filePath" : "rezervacija.gspec",
+              "lineNumber" : 57
+            },
+            "objects" : [ {
+              "name" : "button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 59
+                },
+                "name" : "below pocetak",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "pocetak",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "63px"
+                } ],
+                "highlight" : [ "button", "pocetak" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 60
+                },
+                "name" : "height 18px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "button",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "18px",
+                  "realDistance" : "18px"
+                } ],
+                "highlight" : [ "button" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 61
+                },
+                "name" : "inside forma 3px bottom, >= 0px right",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "forma",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "3px",
+                  "realDistance" : "3px"
+                }, {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "forma",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "87px"
+                } ],
+                "highlight" : [ "button", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 62
+                },
+                "name" : "width 13px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "button",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "13px",
+                  "realDistance" : "13px"
+                } ],
+                "highlight" : [ "button" ]
+              } ]
+            }, {
+              "name" : "pocetak",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 65
+                },
+                "name" : "above button",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "pocetak",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "button",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "63px"
+                } ],
+                "highlight" : [ "pocetak", "button" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "rezervacija.gspec",
+                  "lineNumber" : 66
+                },
+                "name" : "inside forma 42px top, 0px right",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "pocetak",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "forma",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "42px",
+                  "realDistance" : "42px"
+                }, {
+                  "from" : {
+                    "object" : "pocetak",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "forma",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "pocetak", "forma" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 8, 60, 979, 148 ]
+            },
+            "button" : {
+              "area" : [ 541, 383, 13, 18 ]
+            },
+            "naslov" : {
+              "area" : [ 302, 437, 390, 33 ]
+            },
+            "desno" : {
+              "area" : [ 548, 708, 80, 20 ]
+            },
+            "meniLista" : {
+              "area" : [ 8, 176, 979, 32 ]
+            },
+            "lijevo" : {
+              "area" : [ 366, 708, 80, 20 ]
+            },
+            "celija" : {
+              "area" : [ 302, 506, 54, 32 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 995, 766 ]
+            },
+            "pocetak" : {
+              "area" : [ 537, 296, 104, 24 ]
+            },
+            "forma" : {
+              "area" : [ 353, 254, 288, 150 ]
+            },
+            "dugmad" : {
+              "area" : [ 8, 708, 979, 20 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1573601006659,
+        "type" : "node"
+      } ],
+      "time" : 1573600990936,
+      "type" : "node"
+    } ]
+  }
+};
+        </script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="top-menu">
+                <a class="link" href="report.html">Back to Test Overview</a>
+                <span class="link" v-on:click="expandAll()">Expand All</span>
+                <span class="link" v-on:click="collapseAll()">Collapse All</span>
+                <span class="link" v-on:click="expandOnlyErrors()">Expand Errors</span>
+            </div>
+            <div v-for="node in reportData.report.nodes">
+                <report-node v-if="node.type === 'node'" v-bind:node="node"></report-node>
+                <div class="node-text" v-if="node.type === 'text'">
+                    {{node.name}}
+                </div>
+                <layout-report v-if="node.type === 'layout'" v-bind:layout="node"></layout-report>
+                <mutation-report v-if="node.type === 'mutation'" v-bind:report="node"></mutation-report>
+            </div>
+        </div>
+
+        <template id="tpl-report-node">
+            <div class="report-node">
+                <div class="node-line" v-bind:class="['status-' + node.status]">
+                    <span class="node-time">{{node.time | formatTime}}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(node)"
+                        v-bind:class="['status-' + node.status, node.expanded ? 'expanded': 'collapsed', 'contains-children-' + node.hasChildren]"
+                        >{{node.status}}</span>
+                    <span class="node-title">{{node.name}}</span>
+                    <span class="node-extras-link"
+                        v-if="node.extras"
+                        v-on:click="showNodeExtrasPopup(node.extras)"
+                        >extras</span>
+                </div>
+                <ul class="node-attachments" v-if="node.attachments && node.attachments.length > 0">
+                    <li v-for="attachment in node.attachments">
+                        <a class="icon-sprite-before node-attachment" v-bind:href="attachment">{{attachment}}</a>
+                    </li>
+                </ul>
+                <div class="child-nodes" v-if="node.type === 'node'" v-bind:class="{'child-nodes-expanded': node.expanded}">
+                    <div class="stacktrace" v-if="node.stacktrace">{{node.stacktrace}}</div>
+                    <div v-for="childNode in node.nodes">
+                        <report-node v-if="childNode.type === 'node'" v-bind:node="childNode"></report-node>
+                        <div class="node-text" v-if="childNode.type === 'text'">
+                            {{childNode.name}}
+                        </div>
+                        <layout-report v-if="childNode.type === 'layout'" v-bind:layout="childNode" v-bind:isSubLayout="false"></layout-report>
+                        <mutation-report v-if="childNode.type === 'mutation'" v-bind:report="childNode"></mutation-report>
+                    </div>
+                </div>
+                <div class="extras-popup popup-wrapper" v-if="extrasPopup.show">
+                    <div class="popup-shadow" v-on:click="extrasPopup.show = false"> </div>
+                    <div class="popup-container" style="top: 30px;">
+                        <div class="popup-body">
+                            <table class="extras-table">
+                                <tbody>
+                                    <tr v-for="extrasItem in extrasPopup.extras">
+                                        <td>{{extrasItem.name}}</td>
+                                        <td>
+                                            <div v-if="extrasItem.value.type === 'link'">
+                                                <a class="link" v-bind:href="extrasItem.value.value">{{extrasItem.value.value}}</a>
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'file'">
+                                                <a class="link" v-bind:href="extrasItem.value.value">{{extrasItem.value.value}}</a>
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'text'">
+                                                {{extrasItem.value.value}}
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'image'">
+                                                <a v-bind:href="extrasItem.value.value"><img v-bind:src="extrasItem.value.value"/></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-mutation-report">
+            <div class="mutation-report">
+                <div class="node-line" v-bind:class="['status-' + report.status]">
+                    <span class="node-time">{{report.time | formatTime }}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(report)"
+                        v-bind:class="['status-' + report.status, report.expanded ? 'expanded': 'collapsed', 'contains-children-true']"
+                        >MUTATION</span>
+                    <span class="node-title">{{report.name}}</span>
+                </div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': report.expanded}">
+                    <table class="mutation-table">
+                        <thead>
+                            <tr>
+                                <th v-for="column in tableColumns" v-bind:class="{'sorted-column': sorting.columnField === column.field}">
+                                    <span class="link" v-on:click="sortTable(column)">{{column.name}}</span>
+                                    <span class="sorting-icon"
+                                        v-if="sorting.columnField === column.field"
+                                        v-bind:class="[sorting.order === 1 ? 'sorting-down' : 'sorting-up']"></span>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="mutation-table-total">
+                                <td> <b>Total</b> </td>
+                                <td class="cell-passed">{{report.mutationReport.totalPassed}}</td>
+                                <td class="cell-failed">{{report.mutationReport.totalFailed}}</td>
+                                <td class="cell-failed">{{report.mutationReport.failedRatio | roundFailedRatio}}%</td>
+                                <td></td>
+                            </tr>
+                            <tr v-for="mutation in mutations">
+                                <td><span class="link" v-on:click="toggleMutationFor(mutation.name)">{{mutation.name}}</span></td>
+                                <td class="cell-passed">{{mutation.passed}}</td>
+                                <td class="cell-failed">{{mutation.failed}}</td>
+                                <td class="cell-failed">{{mutation.failedRatio}}%</td>
+                                <td>
+                                    <div v-if="showFailedMutationsFor === mutation.name">
+                                        All failed mutations:
+                                        <ul>
+                                            <li v-for="mutationText in mutation.failedMutations">{{mutationText}}</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-layout-report">
+            <div class="layout-report">
+                <div class="node-line" v-bind:class="['status-' + layout.status]">
+                    <span class="node-time">{{layout.time | formatTime}}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(layout)"
+                        v-bind:class="['status-' + layout.status, layout.expanded ? 'expanded': 'collapsed', 'contains-children-' + layout.hasChildren]"
+                        >LAYOUT</span>
+                    <span class="node-title">{{layout.name}}</span>
+                </div>
+                <div class="node-horizontal-menu">
+                    <span class="link" v-on:click="showFailureMap()">Failure Map</span> |
+                    <span class="link" v-on:click="showHeatMap()">Heat Map</span>
+                </div>
+
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': layout.expanded}">
+                    <layout-section v-for="section in layout.sections" v-bind:section="section" v-bind:bus="bus" v-bind:layout="layout" @spec-clicked="specClicked"></layout-section>
+                </div>
+
+                <screenshot-popup v-if="screenshotPopup.shown"
+                    v-bind:screenshot="screenshotPopup.screenshotFile"
+                    v-bind:highlight="screenshotPopup.highlightAreas"
+                    v-bind:guides="screenshotPopup.metaGuides"
+                    v-bind:spec="screenshotPopup.spec"
+                    @close="screenshotPopup.shown = false"
+                    ></screenshot-popup>
+            </div>
+        </template>
+
+        <template id="tpl-layout-section">
+            <div class="layout-section" v-bind:class="{'has-failure': section.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(section)"
+                    v-bind:title="section.place ? section.place.filePath + ':' + section.place.lineNumber : ''"
+                    >{{section.name}}</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': section.expanded}">
+                    <layout-section v-for="subSection in section.sections" v-bind:section="subSection" v-bind:bus="bus" v-bind:layout="layout"></layout-section>
+                    <object-node v-for="object in section.objects" v-bind:object="object" v-bind:bus="bus" v-bind:layout="layout"></object-node>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-object-node">
+            <div class="layout-object" v-bind:class="{'has-failure': object.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(object)"
+                    >{{object.name}}:</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': object.expanded}">
+                    <layout-spec v-for="spec in object.specs" v-bind:spec="spec" v-bind:bus="bus" v-bind:layout="layout"></layout-spec>
+
+                    <layout-spec-group v-if="object.specGroups"
+                        v-for="specGroup in object.specGroups"
+                        v-bind:specgroup="specGroup"
+                        v-bind:bus="bus"
+                        v-bind:layout="layout"
+                        ></layout-spec-group>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-spec-group">
+            <div class="layout-section" v-bind:class="{'has-failure': specgroup.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(specgroup)"
+                    >{{specgroup.name}}:</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': specgroup.expanded}">
+                    <layout-spec v-for="spec in specgroup.specs" v-bind:spec="spec" v-bind:bus="bus" v-bind:layout="layout"></layout-spec>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-layout-spec">
+            <div class="layout-spec" v-bind:class="[isFailed ? 'has-failure': '', 'status-' + spec.status]">
+                <div class="title icon-sprite-before"
+                    v-on:click="showSpec"
+                    v-bind:title="spec.place ? spec.place.filePath + ':' + spec.place.lineNumber : ''"
+                    >{{spec.name}}</div>
+                <ul class="error-messages" v-if="isFailed">
+                    <li class="error-message" v-if="spec.imageComparison">
+                        <span class="link" v-on:click="imageComparisonShown = true">Show image comparison</span>
+                    </li>
+                    <li class="error-message" v-for="error in spec.errors">{{error}}</li>
+                </ul>
+                <div v-if="spec.subLayout" class="sublayout">
+                    <layout-section v-if="spec.subLayout.sections" v-for="section in spec.subLayout.sections" v-bind:section="section" v-bind:bus="bus" v-bind:layout="spec.subLayout"></layout-section>
+                </div>
+                <image-comparison-popup v-if="imageComparisonShown" v-on:close="imageComparisonShown = false" v-bind:imagedata="spec.imageComparison"/>
+            </div>
+        </template>
+
+
+        <template id="tpl-image-comparison-popup">
+            <div class="image-comparison-popup">
+                <div class="popup-shadow" v-on:click="$emit('close')"> </div>
+                <div class="popup-container" v-bind:style="{top: position.top + 'px', left: position.left + 'px', width: position.width + 'px', height: position.height + 'px'}">
+                    <div class="popup-body">
+                        <div class="image-layout">
+                            <h5>Actual Image</h5>
+                            <img v-bind:src="imagedata.actualImage"/>
+                        </div>
+                        <div class="image-layout">
+                            <h5>Expected Image</h5>
+                            <img v-bind:src="imagedata.expectedImage"/>
+                        </div>
+                        <div class="image-layout">
+                            <h5>Comparison Map</h5>
+                            <img v-bind:src="imagedata.comparisonMapImage"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+
+        <template id="tpl-screenshot-popup">
+            <div>
+                <div class="popup-shadow" v-on:click="$emit('close')"> </div>
+                <div class="popup-container" v-bind:style="{top: position.top + 'px', left: position.left + 'px', width: position.width + 'px', height: position.height + 'px'}">
+                    <div class="popup-body">
+                        <div class="image-cropper" v-bind:style="{width: crop.width + 'px', height: crop.height + 'px'}">
+                            <img v-bind:src="screenshot" v-bind:style="{'margin-left': crop.offsetLeft +'px', 'margin-top': crop.offsetTop + 'px'}"/>
+                        </div>
+                        <svg v-bind:width="crop.width + 'px'" v-bind:height="crop.height + 'px'">
+                            <g v-for="object in highlight.objects">
+                                <rect
+                                    v-bind:x="object.area.x + crop.offsetLeft"
+                                    v-bind:y="object.area.y + crop.offsetTop"
+                                    v-bind:width="object.area.width"
+                                    v-bind:height="object.area.height"
+                                    style="opacity: 0.8"
+                                    v-bind:style="{fill: object.fill?object.color:'none', 'stroke-width': object.border?3:0, stroke: object.border?object.color:'none'}"/>
+                                <g v-if="object.caption">
+                                    <rect
+                                        v-bind:x="object.area.x + crop.offsetLeft"
+                                        v-bind:y="object.area.y + crop.offsetTop - 20"
+                                        v-bind:width="object.name.length * 15 + 10"
+                                        v-bind:height="20"
+                                        style="opacity: 0.8; stroke-width: 0; stroke: none;"
+                                        v-bind:style="{fill: object.color}"/>
+                                    <text
+                                        v-bind:x="object.area.x + crop.offsetLeft + 5"
+                                        v-bind:y="object.area.y + crop.offsetTop - 5"
+                                        fill="#ffffff"
+                                        font-weight="bold"
+                                        font-family="helvetica"
+                                        font-size="15px"
+                                        >{{object.name}}</text>
+                                </g>
+                            </g>
+
+                            <g v-for="guideElements in guides">
+                                <g v-for="guide in guideElements">
+                                    <line class="meta-line-guide" v-if="guide.type === 'line'"
+                                        v-bind:x1="guide.x1 + crop.offsetLeft"
+                                        v-bind:y1="guide.y1 + crop.offsetTop"
+                                        v-bind:x2="guide.x2 + crop.offsetLeft"
+                                        v-bind:y2="guide.y2 + crop.offsetTop"/>
+
+                                    <g v-if="guide.type === 'text'">
+                                        <text class="meta-text"
+                                            v-bind:x="guide.x + crop.offsetLeft"
+                                            v-bind:y="guide.y + crop.offsetTop"
+                                            v-bind:transform="guide.vertical ? 'rotate(-90,' + (guide.x + crop.offsetLeft) + ', ' + (guide.y + crop.offsetTop) +')': 'rotate(0)'"
+                                            >{{guide.text}}</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="popup-side-panel">
+                            <div v-if="spec">
+                                <span class="spec-name">{{spec.name}}</span>
+                                <ul v-if="spec.errors" class="spec-errors">
+                                    <li v-for="error in spec.errors">{{error}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <script>renderTestReport(REPORT_DATA);</script>
+    </body>
+</html>
